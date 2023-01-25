@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Weather part */
+.container{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.container .arrowIcon{
+    align-self: flex-start;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.container .arrowIcon:hover{
+    transform: scale(1.2);
+}
+.container .img_deg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .img_deg img{
+   width: 85px;
+   height: 85px;
+}
+.container .img_deg p{
+    margin-top: 5px;
+    font-size: 45px;
+    font-weight: 600;
+}
+.container .des_loc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .des_loc .description{
+    font-size: 23px;
+    font-weight: 500;
+    padding: 2px;
+}
+.container .des_loc .location{
+    font-size: 20px;
+}
+.container .des_loc .location i{
+    font-size: 22px;
+    font-weight: 500;
+}
+.container .properies{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .properies .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container .properies .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container .properies .des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container .properies .des .deg{
+    font-size: 19px;
+    font-weight: 500;
+}
+.container .properies .des .title{
+    font-size: 17px;
+}
+.container .properies i{
+    color: #5DBBFF;
+    font-size: 35px;
+}
+
+/* Input part */
+.container2{
+    margin: 70px 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 input , .container2 button {
+    width: 80%;
+    text-align: center;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.container2 button{
+    cursor: pointer;
+    color: rgb(97, 97, 97);
+}
+.container2 input::placeholder{
+    color: rgb(97, 97, 97);
+    font-weight: 500;
+    font-size: 24px;
+}
+.container2 input:focus{
+    border: 2px solid #43AFFC;
+ }
+.container2 input:focus::placeholder{
+   color: transparent;
+}
+.container2 input:hover, .container2 button:hover{
+    transform: scale(1.05);
+    border: 2px solid #43AFFC;
+}
+.container2 div{
+    height: 1px;
+    width: 80%;
+    margin: 30px 0;
+    background: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container2 div::before{
+    content: "or";
+    color:#000000;;
+    font-size: 20px;
+    padding: 0 15px;
+    background: rgb(255, 255, 255);
+}
+
+/* Error Handling */
+.error {
+  color: #721c24;
+  background: #f7cacd;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 12px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid #721c24;
+}
+
+/* Pending Handling */
+.pending {
+  color: #0c5460;
+  background: #d1ecf1;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 12px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid #0c5460;
+}
+
+.hide {
+  display: none;
+}
