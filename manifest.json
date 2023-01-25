@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Weather Extention",
+    "version": "1.0",
+    "description": "Chrome extension that display the temperature and weather condition in the city you have entered or determine your device location automatically ",
+    "icons": {
+        "128": "icons/Extention_Icon128.png",
+        "48": "icons/Extention_Icon48.png",
+        "24": "icons/Extention_Icon24.png",
+        "16": "icons/Extention_Icon16.png"
+    },
+    "action": {
+        "default_icon": "icons/Extention_Icon48.png",
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "geolocation"
+      ]
+}
