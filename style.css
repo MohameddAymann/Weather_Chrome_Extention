@@ -1,3 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Weather part */
+.container{
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.container .arrowIcon{
+    align-self: flex-start;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.container .arrowIcon:hover{
+    transform: scale(1.2);
+}
+.container .img_deg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container .img_deg img{
+   width: 85px;
+   height: 85px;
+}
+.container .img_deg p{
+    margin-top: 5px;
+    font-size: 45px;
+    font-weight: 600;
+}
+.container .des_loc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .des_loc .description{
+    font-size: 23px;
+    font-weight: 500;
+    padding: 2px;
+}
+.container .des_loc .location{
+    font-size: 20px;
+}
+.container .des_loc .location i{
+    font-size: 22px;
+    font-weight: 500;
+}
+.container .properies{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .properies .left{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container .properies .right{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container .properies .des{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+.container .properies .des .deg{
+    font-size: 19px;
+    font-weight: 500;
+}
+.container .properies .des .title{
+    font-size: 17px;
+}
+.container .properies i{
+    color: #5DBBFF;
+    font-size: 35px;
+}
+
 /* Error Handling */
 .error {
   color: #721c24;

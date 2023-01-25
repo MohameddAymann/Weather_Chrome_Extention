@@ -3,6 +3,15 @@ const container2 = document.querySelector(".container2");
 const input = document.querySelector(".container2 input");
 const button = document.querySelector(".container2 button");
 const statusParagraph = document.querySelector(".container2 p");
+const arrowIcon = document.querySelector(".container .arrowIcon");
+
+arrowIcon.addEventListener("click", (event)=>{
+  container1.classList.add("hide");
+  container2.classList.remove("hide");
+});
+
+
+
 
 let Api;
 
@@ -34,4 +43,21 @@ function error(error) {
   statusParagraph.innerText = error.message;
   statusParagraph.classList.add("error");
 }
-function fetchData() {}
+
+
+function fetchData(){
+    statusParagraph.innerText = "Getting weather details...";
+    statusParagraph.classList.add("pending");
+    fetch(Api)
+    .then((res) => {
+     return res.json()
+    }).then((data) => {
+        console.log(data)
+        weatherDisplay(data)
+    }).catch((error) =>{
+        statusParagraph.innerText = error.message;
+        statusParagraph.classList.replace("pending", "error");
+    });
+  };
+
+function weatherDisplay(data){}
