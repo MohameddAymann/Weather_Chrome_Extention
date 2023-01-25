@@ -1,0 +1,29 @@
+/* Error Handling */
+.error {
+  color: #721c24;
+  background: #f7cacd;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 12px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid #721c24;
+}
+
+/* Pending Handling */
+.pending {
+  color: #0c5460;
+  background: #d1ecf1;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 12px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: 1px solid #0c5460;
+}
+
+.hide {
+  display: none;
+}
